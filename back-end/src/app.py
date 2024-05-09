@@ -4,7 +4,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 
 from files_helper import create_temp_dir, delete_temp_dir, get_img, get_blood_data
-from result_heler import is_xray_pneumonia, is_xls_pneumonia
+from result_helper import is_xray_pneumonia, is_xls_pneumonia
 
 from models.resnet_model import XrayModel
 from models.decision_tree import DecisionTree
